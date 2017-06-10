@@ -126,26 +126,55 @@ if (23 === "23") {
 
 
 
-var  ageJohn = 20;
-var ageMark = 18;
-var ageNiall = 25;
-var heightJohn = 175;
-var heightMark = 170;
-var heightNiall = 176;
-var scoreJohn = heightJohn + ageJohn * 5;
-var scoreMark = heightMark + ageMark * 5;
-var scoreNiall = heightNiall + ageNiall * 5;
+// var  ageJohn = 20;
+// var ageMark = 18;
+// var ageNiall = 25;
+// var heightJohn = 175;
+// var heightMark = 170;
+// var heightNiall = 176;
+// var scoreJohn = heightJohn + ageJohn * 5;
+// var scoreMark = heightMark + ageMark * 5;
+// var scoreNiall = heightNiall + ageNiall * 5;
+//
+// if (scoreJohn > scoreMark && scoreJohn > scoreNiall) {
+//     console.log('John wins and his score is ' + scoreJohn);
+// } else if (scoreNiall > scoreJohn && scoreNiall > scoreMark) {
+//     console.log('Niall wins and his score is ' + scoreNiall);
+//
+// } else if (scoreMark > scoreJohn && scoreMark > scoreNiall) {
+//     console.log('Mark wins and his score is ' + scoreMark);
+// } else {
+//     console.log('It\'s a draw');
+// }
 
-if (scoreJohn > scoreMark && scoreJohn > scoreNiall) {
-    console.log('John wins and his score is ' + scoreJohn);
-} else if (scoreNiall > scoreJohn && scoreNiall > scoreMark) {
-    console.log('Niall wins and his score is ' + scoreNiall);
 
-} else if (scoreMark > scoreJohn && scoreMark > scoreNiall) {
-    console.log('Mark wins and his score is ' + scoreMark);
-} else {
-    console.log('It\'s a draw');
+//Functions
+
+function calculateAge(yearOfBirth) {
+    var age = 2017 - yearOfBirth;
+    return age;
 }
+
+var ageJohn = calculateAge(1991);
+var ageMark = calculateAge(1968);
+var ageNiall = calculateAge(1972);
+
+
+function yearsUntilRetrement(name, year) {
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+
+    if (retirement >= 0){
+        console.log(name + ' retires in ' + retirement + ' years.');
+    } else {
+        console.log(name + ' has already retire.');
+    }
+
+}
+
+yearsUntilRetrement('John', 1990);
+yearsUntilRetrement('Mark', 1969);
+yearsUntilRetrement('Mary', 1948);
 
 
 
