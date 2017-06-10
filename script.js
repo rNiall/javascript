@@ -199,6 +199,30 @@ if (x === 5) {
     //do something
 }
 
+///////////////////////
+//Arrays/////////////
+////////////////////
+
+var names = ['John', 'Jane', 'Mark'];
+var years = new Array (1990,1969, 1948);
+
+console.log(names[1]);
+names[1] = 'Ben';
+console.log(names[1]);
+
+var john = ['John', 'Smith', 1990, 'student', false];
+
+john.push('red');
+john.unshift('Mr.');
+john.pop();
+john.shift();
+
+console.log(john);
+
+console.log(john.indexOf('Smith'));
+if (john.indexOf('teacher') === -1) {
+    console.log('John is NOT a teacher');
+}
 
 
 
