@@ -150,39 +150,54 @@ if (23 === "23") {
 
 //Functions
 
-function calculateAge(yearOfBirth) {
-    var age = 2017 - yearOfBirth;
-    return age;
+// function calculateAge(yearOfBirth) {
+//     var age = 2017 - yearOfBirth;
+//     return age;
+// }
+//
+// var ageJohn = calculateAge(1991);
+// var ageMark = calculateAge(1968);
+// var ageNiall = calculateAge(1972);
+//
+//
+// function yearsUntilRetrement(name, year) {
+//     var age = calculateAge(year);
+//     var retirement = 65 - age;
+//
+//     if (retirement >= 0){
+//         console.log(name + ' retires in ' + retirement + ' years.');
+//     } else {
+//         console.log(name + ' has already retire.');
+//     }
+//
+// }
+//
+// yearsUntilRetrement('John', 1990);
+// yearsUntilRetrement('Mark', 1969);
+// yearsUntilRetrement('Mary', 1948);
+
+
+
+// Statements and expressions
+
+
+function someFun(par) {
+    //code
 }
 
-var ageJohn = calculateAge(1991);
-var ageMark = calculateAge(1968);
-var ageNiall = calculateAge(1972);
+var someFun = function (par) {
+    //code
+};
 
 
-function yearsUntilRetrement(name, year) {
-    var age = calculateAge(year);
-    var retirement = 65 - age;
+//Expressions
+3+4;
+var x = 3;
 
-    if (retirement >= 0){
-        console.log(name + ' retires in ' + retirement + ' years.');
-    } else {
-        console.log(name + ' has already retire.');
-    }
-
+//statements
+if (x === 5) {
+    //do something
 }
-
-yearsUntilRetrement('John', 1990);
-yearsUntilRetrement('Mark', 1969);
-yearsUntilRetrement('Mary', 1948);
-
-
-
-
-
-
-
-
 
 
 
