@@ -141,10 +141,10 @@ if (scoreJohn > scoreMark && scoreJohn > scoreNiall) {
 } else if (scoreNiall > scoreJohn && scoreNiall > scoreMark) {
     console.log('Niall wins and his score is ' + scoreNiall);
 
-} else if (scoreJohn === scoreMark && scoreMark === scoreNiall) {
-    console.log('None wins. They have the same scores. Johns score is ' + scoreJohn + '. Mark score is ' + scoreMark + '. Niall score is ' + scoreNiall + '.');
-} else {
+} else if (scoreMark > scoreJohn && scoreMark > scoreNiall) {
     console.log('Mark wins and his score is ' + scoreMark);
+} else {
+    console.log('It\'s a draw');
 }
 
 
