@@ -346,13 +346,51 @@ var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
 //     }
 // }
 
-for (var i = 1; i <= 5; i++){
-    if (i === 3){
-        continue;
-    }
+// for (var i = 1; i <= 5; i++){
+//     if (i === 3){
+//         continue;
+//     }
+//
+//     console.log(i);
+// }
 
-    console.log(i);
+
+var now = 2017;
+var years = [1991, 1990, 1989, 1810, 1941];
+var ages = [];
+ for (var i = 0; i < years.length; i++){
+     ages[i] = 2017 - years[i];
+ }
+
+ for (var i = 0; i < ages.length; i++){
+     if (ages[i] >= 18){
+         console.log('Full age person ' + ages[i]);
+     } else {
+         console.log('You can\'t buy beer');
+     }
+ }
+
+function printFullAge(years) {
+     var output = [];
+    for (var i = 0; i < years.length; i ++){
+        if ((now - years[i]) >= 18){
+            output.push(true);
+        } else {
+            output.push(false);
+        }
+    }
+    return output;
 }
+var full_1 = printFullAge([1991,2009,1980]);
+var full_2 = printFullAge([2008,2009,1991]);
+
+console.log(full_1);
+console.log(full_2);
+
+
+
+
+
 
 
 
