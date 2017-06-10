@@ -227,7 +227,7 @@ if (x === 5) {
 
 ///////////////////////////
 //// Objects
-
+/*
 var john  = {
     name: 'John',
     lastName: 'Smith',
@@ -255,15 +255,59 @@ jane['job'] = 'retired';
 jane['isMarried'] = true;
 
 console.log(jane);
+*/
+
+///////////////////////
+//// Objects and methods
+/*
+var john  = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge: function () {
+        return 2017 - this.yearOfBirth;
+    }
+};
+
+console.log(john.calculateAge());
+
+var age = john.calculateAge();
+john.age = age;
+
+console.log(john);
+ */
+
+var john  = {
+    name: 'John',
+    lastName: 'Smith',
+    yearOfBirth: 1990,
+    job: 'teacher',
+    isMarried: false,
+    family: ['Jane', 'Mark', 'Bob'],
+    calculateAge: function () {
+       // return 2017 - this.yearOfBirth;
+        this.age = 2017 - this.yearOfBirth;
+    }
+};
+
+john.calculateAge();
+console.log(john);
 
 
 
+var niall  = {
+    yearOfBirth: 1950,
+    calculateAge: function () {
+        // return 2017 - this.yearOfBirth;
+        this.age = 2017 - this.yearOfBirth;
+    }
+};
 
-
-
-
-
-
+niall.calculateAge();
+console.log(niall);
 
 
 
